@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<bddobject>
+    <connection name="PostgreSQL">
+        <host>192.168.88.12</host>
+        <port>5432</port>
+        <database>race</database>
+        <user>postgres</user>
+        <password>postgres</password>
+    </connection>
+    
+    <connection name="Oracle">
+        <host>localhost</host>
+        <port>1521</port>
+        <database>construction</database>
+        <user>construction</user>
+        <password>construction</password>
+    </connection>
+</bddobject>

@@ -1,0 +1,11 @@
+<form action="@action" class="pt-3">
+    @champs
+    <input value="@class" name="mapping" type="hidden">
+    <input value="@redirect" name="redirect" type="hidden">
+    <input value="@link" name="redirect-error" type="hidden">
+    <input value="@function" name="method" type="hidden">
+    <p class="text-danger">@error</p>
+    <div class="mt-3">
+        <input type="submit" class="btn btn-block btn-dark font-weight-medium auth-form-btn" style="border-radius: 15px;" value="Valider" />
+    </div>
+</form>

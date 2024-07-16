@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Pdf Certification</title>
+    <style>
+        @page {
+            size: A4 landscape;
+            margin: 10mm;
+        }
+
+        .border-pattern {
+            position: absolute;
+            left: 17mm;
+            height: 180mm;
+            width: 241mm;
+            border: 1mm solid gold;
+            /* http://www.heropatterns.com/ */
+            background-color: #d6d6e4;
+        }
+
+        .content {
+            position: absolute;
+            left: 10mm;
+            top: 10mm;
+            height: 160mm;
+            width: 220mm;
+            border: 1mm solid gold;
+            background: white;
+        }
+
+        .inner-content {
+            border: 1mm solid gold;
+            margin: 4mm;
+            padding: 10mm;
+            height: 133mm;
+            text-align: center;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 48pt;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 24pt;
+            margin-top: 0;
+            padding-bottom: 1mm;
+            display: inline-block;
+            border-bottom: 1mm solid gold;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            padding-bottom: 4mm;
+            border-bottom: 1mm solid gold;
+        }
+
+        h3 {
+            font-size: 20pt;
+            margin-bottom: 0;
+            margin-top: 10mm;
+        }
+
+        p {
+            font-size: 16pt;
+        }
+
+        .badge {
+            width: 40mm;
+            height: 40mm;
+            position: absolute;
+            right: 10mm;
+            bottom: 10mm;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z' /%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body>
+<div class="border-pattern">
+    <div class="content">
+        <div class="inner-content">
+            <h1>Premier place</h1>
+            <p>Nous somme heureux de remmettre aux vainceurs</p>
+            <h3>l'équipe: @Equipe</h3>
+            <p>Cette equipe a vaincue</p>
+            <p>les autres en atteignant le point</p>
+            <h3>@point point</h3>
+        </div>
+    </div>
+</div>
+</body>
+</html>

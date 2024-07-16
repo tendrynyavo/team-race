@@ -1,0 +1,4 @@
+<label class="form-label fw-bold mb-3">@label</label>
+<div class="form-group">
+    @input
+</div>
